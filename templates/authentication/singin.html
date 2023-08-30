@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Register</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template-->
+    <link href="{% static 'css/sb-admin-2.min.css' %}" rel="stylesheet">
+</head>
+<body class="bg-gradient-primary">
+    <div class="container">
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                    <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+                    <div class="col-lg-7">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+                            </div>
+                            <form method="post">
+                                {% csrf_token %}
+
+                                    <div class="text-center">
+                                        <div class="form-group">
+                                            <input type="text" id="employee_id" name="employee_id" 
+                                                placeholder="Employee Id" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <div class="form-group">
+                                            <input type="text" id="email_id" name="email_id" 
+                                                placeholder="Email Id" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <div class="form-group">
+                                            <input type="text" id="password1" name="password1"  placeholder="Confirm Password" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <input type="submit" value="Signin">
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
