@@ -34,9 +34,6 @@
                 <div class="sidebar-brand-text mx-3">DEVX</div>
             </a>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
-
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
                 <a class="nav-link">
@@ -44,34 +41,51 @@
                     <span>Interface</span></a>
             </li>
 
-            <!-- Divider -->
             <hr class="sidebar-divider">
-
-            <!-- Nav Item - Add KB Docs -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Add KB Docs</span>
-                </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                </div>
-            </li>
+                    <div class="form-group">
+                        <label for="tool">Tools</label>
+                        <select class="form-control" id="tool" name="tool" required>
+                            <option value="pyATS">pyATS</option>
+                            <option value="Xpresso">Xpresso</option>
+                            <option value="Xpresso">Earms</option>
+                            <option value="Xpresso">Trade</option>
+                            <option value="Xpresso">LaaS</option>
+                            <option value="Xpresso">ADSRSVP</option>
+                            <option value="Xpresso">SSR</option>
+                        </select>
+                    </div>
 
+                    <div class="form-group">
+                        <label for="tool">Reporter</label>
+                        <input type="text">
+                    </div>
 
-            <!-- Nav Item - Add KB Docs -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>View KB Docs</span>
+                    <div class="form-group">
+                        <label for="tool">Created DateTime</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tool">Closed DateTIme</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tool">Source of Ticket</label>
+                        <select class="form-control" id="tool" name="tool" required>
+                            <option value="Xpresso">STS</option>
+                            <option value="Xpresso">Piestack</option>
+                            <option value="Xpresso">Github</option>
+                            <option value="Xpresso">Webex</option>
+                            <option value="Xpresso">Mail</option>
+                        </select>
+                    </div>
                 </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                </div>
             </li>
         </ul>
-        <!-- End of Sidebar -->
-
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
